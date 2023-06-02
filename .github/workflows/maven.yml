@@ -45,6 +45,6 @@ jobs:
       # uses: actions/upload-artifact@v2
       uses: actions/upload-artifact@v3.1.2
       with:
-        name: jar
+        name: files.jar
         path: target/*.jar
         retention-days: 3
