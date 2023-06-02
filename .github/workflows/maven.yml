@@ -34,6 +34,12 @@ jobs:
         mvn -v
         mvn -B package --file pom.xml
 
+    - name: print matrix env
+      run: ls ~ 
+        
+    - uses: actions/checkout@v3
+    - name: build 
+      run: g++ src/main/java/Person.java -o files.o
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
